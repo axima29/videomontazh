@@ -1,0 +1,14 @@
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+# рабочие данные проектов и сырье не публикуются
+*.mp4
+*.mov
+*.MOV
+*.wav
+*.db
+*.db.gz
+*.webp
+config.py
+package-lock.json

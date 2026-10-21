@@ -1,0 +1,10 @@
+{
+  "name": "videomontazh-scripts",
+  "private": true,
+  "description": "Рендер страницы рилса в mp4 и запись экрана для скилла Видеомонтаж",
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "playwright-core": "^1.50.0",
+    "puppeteer-core": "^23.11.1"
+  }
+}
