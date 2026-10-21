@@ -142,7 +142,7 @@
     tl.fromTo('#grad', { opacity: 1 }, { opacity: 0, duration: .6, ease: P, immediateRender: false }, T0);
     // финал: окно автора гаснет, вопрос для комментариев, логотип из размытия в резкость
     const sp = SEG.speech;
-    tl.fromTo('#author', { opacity: 1 }, { opacity: 0, duration: .35, ease: 'power2.inOut', immediateRender: false }, sp - .15);
+    // кадр автора погашен еще после хука; повторное гашение тут включало бы его на 0,35 с перед финалом
     inn(sp + .0, '#enL', { x: -20, y: 0, d: .4 });
     inn(sp + .05, '#enQ', { y: 30, d: .5 });
     tl.fromTo('#enLogo', { opacity: 0, filter: 'blur(14px)', scale: 1.06 }, { opacity: 1, filter: 'blur(0px)', scale: 1, duration: .55, ease: P }, sp + .2);
